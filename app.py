@@ -5,6 +5,7 @@ app=Flask(__name__)
 
 @app.route('/',methods=['GET','POST'])
 def homepg():
+	print("HI")
 	return render_template("ihome.html")
 
 
@@ -14,7 +15,7 @@ def disp():
 	if icd10.exists(icdcode):
 		code=icd10.find(icdcode)
 		if code.billable:
-		    a="billable"
+			a="billable"
 		else:
 			a="not billable"
 
@@ -23,6 +24,6 @@ def disp():
 		return render_template("ihome.html",k="Invalid Code, Please Retry!")
 
 
-if __name__ ==    "__main__":
-	app.run(host="0.0.0.0",debug=False)
+if __name__ == "__main__":
+	app.run(host='0.0.0.0',debug=False)
 	
