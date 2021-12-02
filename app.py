@@ -26,4 +26,5 @@ def disp():
 #desc=code.description,bill=a,chapter=code.chapter,block=code.block,bdesc=code.block_description)
 
 if __name__ ==    "__main__":
-	app.run(debug=True)
+	app.run(host="0.0.0.0",debug=False)
+	
