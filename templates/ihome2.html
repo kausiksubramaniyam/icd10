@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICD CODE DISP</title>
+</head>
+<body style="font-family: verdana;">
+     <h1 style="background-color: rgb(0,34,102);color: white;">{{icdcode}}</h1><br>
+     <h2>Description: {{desc}}</h2>
+     {% if bill=="billable" %}
+         <h3 style="color: green;">Billable</h3>
+    {% else : %}
+         <h3 style="color:red;">Not Billable</h3>
+     {% endif %}
+     <h4>Chapter : {{chapter}}</h4>
+     <h4>Block: {{block}}</h4>
+     <h5>Block Description: {{bdesc}}</h5>
+
+</html></body>

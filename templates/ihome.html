@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 style="background-color: rgb(0,34,102);color: white;font-family: avenir;font-size: 350%;">ICD 10 Code Checker</h1>
+	<title>ICD CODE CHECKER</title>
+</head>
+<body>
+	<form action="http://localhost:5000/submit" method="post">
+	<input type="text" style="width: 600px;height: 40px;margin-top: 40px;margin-bottom: 50px;" name="icdcode" placeholder="Enter ICD-10 Code"><br>
+	<input type="submit" style="width: 200px;height: 30px;background-color: rgb(0,34,102);font-family: avenir;color: white;" name="search" onclick="showInput();">
+	</form>
+	<h4 style="color: red;font-family: avenir;">{{k}}</h4>
+</body>
+</html>
