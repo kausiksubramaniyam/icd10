@@ -9,7 +9,7 @@ def homepg():
 	return render_template("ihome.html")
 
 
-@app.route('/submit',methods=['POST','GET'])
+@app.route('/submit',methods=['GET','POST'])
 def disp():
 	icdcode=request.form['icdcode']
 	try:
