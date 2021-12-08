@@ -11,8 +11,8 @@ def homepg():
 def disp():
 	icdcode=request.form['icdcode']
 	try:
-		print(code_details(icdcode))
+		return code_details(icdcode)
 	except ModuleNotFoundError:
-		print("Unable to find module.")
+		return "Unable to find module."
 if __name__ ==    "__main__":
 	app.run(host="0.0.0.0",debug=False)
