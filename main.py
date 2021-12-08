@@ -1,6 +1,6 @@
 import icd10
 import json
-def code_details(icdcode):
+def icdcode_details(icdcode):
 	keys=["response","code","description","billable","chapter","block","block-description"]
 	details={key: None for key in keys}
 	try:

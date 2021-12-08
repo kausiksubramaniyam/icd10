@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request,redirect,url_for
-import main
+from main import icdcode_details
 
 app=Flask(__name__)
 
@@ -11,7 +11,7 @@ def homepg():
 def disp():
 	icdcode=request.form['icdcode']
 	try:
-		return code_details(icdcode)
+		return icdcode_details(icdcode)
 	except ModuleNotFoundError:
 		return "Unable to find module."
 if __name__ ==    "__main__":
