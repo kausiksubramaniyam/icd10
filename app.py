@@ -7,9 +7,9 @@ app=Flask(__name__)
 def homepg():
 	return render_template("ihome.html")
 
-@app.route('/submit',methods=['POST','GET'])
+@app.route('/icd-extraction',methods=['POST','GET'])
 def disp():
-	icdcode=request.form['icdcode']
+	icdcode=request.json['icdcode']
 	try:
 		return icdcode_details(icdcode)
 	except ModuleNotFoundError:

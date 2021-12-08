@@ -16,6 +16,8 @@ def icdcode_details(icdcode):
 			details["chapter"]=icdcode.chapter
 			details["block"]=icdcode.block
 			details["block_description"]=icdcode.block_description
+		else:
+			details["response"]=0
 	except ValueError:
 		details["response"]=0
 
